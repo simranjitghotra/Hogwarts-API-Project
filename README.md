@@ -28,20 +28,4 @@ No special setup is required to run this project.
 2.  **Open in Browser:** Double-click the `index.html` file to open it in your web browser.
 3.  **View Results:** The page will load and display the characters from the HP API.
 
-## ⚠️ Key Code Snippet
-
-The main JavaScript code responsible for the API call and data rendering is:
-
-```javascript
-fetch("[https://hp-api.onrender.com/api/characters](https://hp-api.onrender.com/api/characters)")
-  .then(response => response.json())
-  .then(data => {
-    // Show only the first 10 characters for now
-    data.slice(0, 10).forEach(character => {
-      // DOM elements are created and appended here...
-    });
-  })
-  .catch(error => {
-    // Error handling...
-  });
 <img width="1847" height="883" alt="image" src="https://github.com/user-attachments/assets/a2732c8b-a82f-467e-896a-432f9bb95585" />
